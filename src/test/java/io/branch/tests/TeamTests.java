@@ -64,7 +64,7 @@ public class TeamTests {
 		}
 	}
 
-	@Test(description = "Test Method to verify if department count matches",enabled=false)
+	@Test(description = "Test Method to verify if department count matches")
 	public void validateDeptCount() {
 		testCaseName = "validateDeptCount";
 		try {
@@ -84,7 +84,7 @@ public class TeamTests {
 		}
 	}
 
-	@Test(description = "Test Method to verify the count of Employees match between All tab and rest of the departments Tab",enabled=false)
+	@Test(description = "Test Method to verify the count of Employees match between All tab and rest of the departments Tab")
 	public void validateEmployeeCount() {
 		testCaseName = "validateEmployeeCount";
 		try {
@@ -111,7 +111,7 @@ public class TeamTests {
 		}
 	}
 
-	@Test(enabled=false)
+	@Test(description = "Test Method to verify the employee names across all tabs and all departments")
 	public void validateEmployeeNames() {
 		testCaseName = "validateEmployeeNames";
 		try {
@@ -140,7 +140,7 @@ public class TeamTests {
 
 	}
 	
-	@Test
+	@Test(description = "Test Method to if all employee has images")
 	public void validateEmployeeImages() {
 		testCaseName = "validateEmployeeNames";
 		try {
@@ -169,9 +169,9 @@ public class TeamTests {
 
 	}
 
-	@Test(enabled=false)
+	@Test(description="Test method to verify missing employees in individual departments but present in all tab")
 	public void validateMissingEmployeeNamesInDeptTabs() throws InterruptedException {
-		testCaseName = "validateEmployeeNames1";
+		testCaseName = "validateMissingEmployeeNamesInDeptTabs";
 		Set<String> allNamesInAllDept = new HashSet<String>();
 		try {
 			boolean flag = false;
@@ -208,7 +208,7 @@ public class TeamTests {
 
 	}
 
-	@Test(description = "Test Method to verify for presence of any broken links on Team page ",enabled=false)
+	@Test(description = "Test Method to verify for presence of any broken links on Team page ")
 	public void validateBrokenLinksOnTeamPage() {
 		testCaseName = "validateBrokenLinksOnTeamPage";
 		Map<String, String> brokenLinksWithReponseMessage = new HashMap<String, String>();
@@ -230,7 +230,7 @@ public class TeamTests {
 		}
 	}
 	
-	@Test(description="Test method to complete sign up process for branch demo request",enabled=false)
+	@Test(description="Test method to complete sign up process for branch demo request")
 	public void validateSignUpForDemoRequest() {
 	testCaseName="validateSignUpForDemoRequest";
 	try {
