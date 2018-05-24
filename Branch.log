@@ -1,20 +1,20 @@
-2018-05-24 00:50:34,113 INFO  [Log] Google Page has been initiated 
-2018-05-24 00:50:34,116 INFO  [Log] Home Page has been initiated 
-2018-05-24 00:50:34,137 INFO  [Log] Team Page has been initiated 
-2018-05-24 00:50:34,143 INFO  [Log] Request For demo Page has been initiated 
-2018-05-24 00:50:34,152 INFO  [Log] ----START validateEmployeeNames ------------ 
-2018-05-24 00:50:34,357 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> name: q] 
-2018-05-24 00:50:36,268 INFO  [Log] Performed a click operation on the webelementProxy element for: DefaultElementLocator 'By.xpath: .//*[@id='sbtc']//span/input[@value='Google Search']' 
-2018-05-24 00:50:38,066 INFO  [Log] Performed a click operation on the webelementProxy element for: DefaultElementLocator 'By.xpath: //*[@id='rso']//h3/a[text()='Branch.io']' 
-2018-05-24 00:50:40,951 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: //footer//ul[@class='bds-accordian-list']/li[2]/a[@data-element-tag='team']] 
-2018-05-24 00:50:41,007 INFO  [Log] Current URL =  https://branch.io/team/#all 
-2018-05-24 00:50:41,013 INFO  [Log] Current Title of the page -  Branch Metrics - The Team 
-2018-05-24 00:50:41,432 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: .//section[2]/div/div[1]/ul/li[1]/a[text()='All']] 
-2018-05-24 00:50:53,260 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: .//section[2]/div/div[1]/ul/li[2]/a[text()='Data']] 
-2018-05-24 00:50:57,179 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: .//section[2]/div/div[1]/ul/li[3]/a[text()='Engineering']] 
-2018-05-24 00:51:01,352 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: .//section[2]/div/div[1]/ul/li[4]/a[text()='Marketing']] 
-2018-05-24 00:51:04,527 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: .//section[2]/div/div[1]/ul/li[5]/a[text()='Operations']] 
-2018-05-24 00:51:07,827 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: .//section[2]/div/div[1]/ul/li[6]/a[text()='Partner Growth']] 
-2018-05-24 00:51:12,171 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: .//section[2]/div/div[1]/ul/li[7]/a[text()='Product']] 
-2018-05-24 00:51:15,413 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (df6b55c9b55fff90a73d92a6a659fb1e)] -> xpath: .//section[2]/div/div[1]/ul/li[8]/a[text()='Recruiting']] 
-2018-05-24 00:51:18,499 INFO  [Log] ------------------END----------------------- 
+2018-05-24 01:26:13,093 INFO  [Log] Google Page has been initiated 
+2018-05-24 01:26:13,100 INFO  [Log] Home Page has been initiated 
+2018-05-24 01:26:13,122 INFO  [Log] Team Page has been initiated 
+2018-05-24 01:26:13,129 INFO  [Log] Request For demo Page has been initiated 
+2018-05-24 01:26:13,137 INFO  [Log] ----START validateEmployeeNames ------------ 
+2018-05-24 01:26:13,307 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> name: q] 
+2018-05-24 01:26:15,150 INFO  [Log] Performed a click operation on the webelementProxy element for: DefaultElementLocator 'By.xpath: .//*[@id='sbtc']//span/input[@value='Google Search']' 
+2018-05-24 01:26:16,629 INFO  [Log] Performed a click operation on the webelementProxy element for: DefaultElementLocator 'By.xpath: //*[@id='rso']//h3/a[text()='Branch.io']' 
+2018-05-24 01:26:18,893 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: //footer//ul[@class='bds-accordian-list']/li[2]/a[@data-element-tag='team']] 
+2018-05-24 01:26:18,913 INFO  [Log] Current URL =  https://branch.io/team/#all 
+2018-05-24 01:26:18,921 INFO  [Log] Current Title of the page -  Branch Metrics - The Team 
+2018-05-24 01:26:19,228 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: .//section[2]/div/div[1]/ul/li[1]/a[text()='All']] 
+2018-05-24 01:26:28,951 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: .//section[2]/div/div[1]/ul/li[2]/a[text()='Data']] 
+2018-05-24 01:26:31,594 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: .//section[2]/div/div[1]/ul/li[3]/a[text()='Engineering']] 
+2018-05-24 01:26:34,794 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: .//section[2]/div/div[1]/ul/li[4]/a[text()='Marketing']] 
+2018-05-24 01:26:37,291 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: .//section[2]/div/div[1]/ul/li[5]/a[text()='Operations']] 
+2018-05-24 01:26:39,679 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: .//section[2]/div/div[1]/ul/li[6]/a[text()='Partner Growth']] 
+2018-05-24 01:26:43,030 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: .//section[2]/div/div[1]/ul/li[7]/a[text()='Product']] 
+2018-05-24 01:26:45,299 INFO  [Log] Performed a click operation on the webelement[[ChromeDriver: chrome on XP (d51a3ffe9e2cc603dded9df883cbe8ac)] -> xpath: .//section[2]/div/div[1]/ul/li[8]/a[text()='Recruiting']] 
+2018-05-24 01:26:47,361 INFO  [Log] ------------------END----------------------- 

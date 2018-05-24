@@ -258,7 +258,7 @@ public class TeamTests {
 	@AfterMethod
 	public void tearDown() {
 		try {
-			//driver.close();
+			driver.close();
 		} catch (Exception e) {
 			Log.error(e.toString());
 		}

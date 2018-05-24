@@ -2,20 +2,20 @@
 <testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-05-24T04:50:26Z" name="Default suite" finished-at="2018-05-24T04:51:18Z" duration-ms="51533">
+  <suite started-at="2018-05-24T05:26:06Z" name="Default suite" finished-at="2018-05-24T05:26:47Z" duration-ms="40487">
     <groups>
     </groups>
-    <test started-at="2018-05-24T04:50:26Z" name="Default test" finished-at="2018-05-24T04:51:18Z" duration-ms="51533">
+    <test started-at="2018-05-24T05:26:06Z" name="Default test" finished-at="2018-05-24T05:26:47Z" duration-ms="40487">
       <class name="io.branch.tests.TeamTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:io.branch.tests.TeamTests@291b4bf5]" started-at="2018-05-24T04:50:27Z" name="setup" finished-at="2018-05-24T04:50:34Z" duration-ms="7140" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:io.branch.tests.TeamTests@2d2ffcb7]" started-at="2018-05-24T05:26:06Z" name="setup" finished-at="2018-05-24T05:26:13Z" duration-ms="6217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateEmployeeImages()[pri:0, instance:io.branch.tests.TeamTests@291b4bf5]" started-at="2018-05-24T04:50:34Z" name="validateEmployeeImages" finished-at="2018-05-24T04:51:18Z" duration-ms="44357" status="PASS">
+        <test-method signature="validateEmployeeImages()[pri:0, instance:io.branch.tests.TeamTests@2d2ffcb7]" started-at="2018-05-24T05:26:13Z" name="validateEmployeeImages" finished-at="2018-05-24T05:26:47Z" duration-ms="34230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateEmployeeImages -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:io.branch.tests.TeamTests@291b4bf5]" started-at="2018-05-24T04:51:18Z" name="tearDown" finished-at="2018-05-24T04:51:18Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:io.branch.tests.TeamTests@2d2ffcb7]" started-at="2018-05-24T05:26:47Z" name="tearDown" finished-at="2018-05-24T05:26:47Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
