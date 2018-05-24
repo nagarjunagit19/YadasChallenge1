@@ -14,121 +14,111 @@ import io.branch.utilities.DriverActions;
 import io.branch.utilities.Global;
 
 public class RequestForDemoPage {
-	
+
 	WebDriver driver = null;
 	DriverActions act = new DriverActions();
-	Global global=new Global();
-	
-	@FindBy(id="FirstName")
+	Global global = new Global();
+
+	@FindBy(id = "FirstName")
 	public WebElement textBoxFirstName;
-	
-	@FindBy(id="LastName")
+
+	@FindBy(id = "LastName")
 	public WebElement textBoxLastName;
-	
-	@FindBy(id="Email")
+
+	@FindBy(id = "Email")
 	public WebElement textBoxWorkEmail;
-	
-	@FindBy(id="Company")
+
+	@FindBy(id = "Company")
 	public WebElement textBoxCompany;
-	
-	@FindBy(id="Phone")
+
+	@FindBy(id = "Phone")
 	public WebElement textBoxPhoneNumber;
-	
-	@FindBy(id="Title")
+
+	@FindBy(id = "Title")
 	public WebElement textBoxJobTitle;
-	
-	@FindBy(id="Country")
+
+	@FindBy(id = "Country")
 	public WebElement dropDownListCountry;
-	
-	@FindBy(id="MAU_Estimate__c")
+
+	@FindBy(id = "MAU_Estimate__c")
 	public WebElement dropDownMonthyUserEstimate;
-	
-	@FindBy(xpath=".//div[@class='bds-show-at-lg']/a[@data-element-tag='demo-header']")
+
+	@FindBy(xpath = ".//div[@class='bds-show-at-lg']/a[@data-element-tag='demo-header']")
 	public WebElement buttonRequestForDemo;
-	
-	@FindBy(xpath=".//*[@id='mktoForm_1488']//label[text()='Journeys Web to App Optimization ']")
+
+	@FindBy(xpath = ".//*[@id='mktoForm_1488']//label[text()='Journeys Web to App Optimization ']")
 	public WebElement checkBoxJourneysWeb;
-	
-	@FindBy(xpath=".//button[@type='submit']")
+
+	@FindBy(xpath = ".//button[@type='submit']")
 	public WebElement buttonSubmit;
-	
-	@FindBy(xpath=".//*[@id='Bannerheading']/h1[text()='Thanks for submitting a demo request.']")
+
+	@FindBy(xpath = ".//*[@id='Bannerheading']/h1[text()='Thanks for submitting a demo request.']")
 	public WebElement headerDemoRequestSuccess;
-	
-	
+
 	/******************************************************************************
 	 * Constructor Name: HomePage
+	 * 
 	 * @Description: Initializing Web driver
 	 * @author Nagarjuna
-	 * @throws Exception 
+	 * @throws Exception
 	 *******************************************************************************/
-	public RequestForDemoPage(WebDriver driver) throws IOException{
+	public RequestForDemoPage(WebDriver driver) throws IOException {
 		this.driver = driver;
 		Properties prop = new Properties();
-	    InputStream input = Global.loadProperties();
+		InputStream input = Global.loadProperties();
 		prop.load(input);
-		
-	} 
-	
-	public void setTextBoxFirstName(WebDriver driver)
-	{
+
+	}
+
+	public void setTextBoxFirstName(WebDriver driver) {
 		act.enterText(driver, textBoxFirstName, global.randomString());
 	}
-	
-	public void setTextBoxLastName(WebDriver driver)
-	{
-		act.enterText(driver, textBoxLastName,global.randomString());
+
+	public void setTextBoxLastName(WebDriver driver) {
+		act.enterText(driver, textBoxLastName, global.randomString());
 	}
-	
-	public void setTextBoxWorkEmail(WebDriver driver,String domain)
-	{
-		
-		act.enterText(driver, textBoxWorkEmail,global.randomEmailGenerator(domain));
+
+	public void setTextBoxWorkEmail(WebDriver driver, String domain) {
+
+		act.enterText(driver, textBoxWorkEmail, global.randomEmailGenerator(domain));
 	}
-	
-	public void setTextBoxCompany(WebDriver driver)
-	{
-		act.enterText(driver, textBoxCompany,global.randomString());
+
+	public void setTextBoxCompany(WebDriver driver) {
+		act.enterText(driver, textBoxCompany, global.randomString());
 	}
-	
-	public void setTextPhoneNumber(WebDriver driver)
-	{
-		act.enterText(driver, textBoxPhoneNumber,global.randomPhoneNumber());
+
+	public void setTextPhoneNumber(WebDriver driver) {
+		act.enterText(driver, textBoxPhoneNumber, global.randomPhoneNumber());
 	}
-	
-	public void setTextBoxJobTitle(WebDriver driver)
-	{
-		act.enterText(driver,textBoxJobTitle,"QA");
+
+	public void setTextBoxJobTitle(WebDriver driver) {
+		act.enterText(driver, textBoxJobTitle, "QA");
 	}
-	
-	public void setCountryDropDown(WebDriver driver)
-	{
+
+	public void setCountryDropDown(WebDriver driver) {
 		act.waitForElementVisible(driver, dropDownListCountry);
-		Select selectCountries=new Select(dropDownListCountry);
+		Select selectCountries = new Select(dropDownListCountry);
 		List<WebElement> countriesCount = selectCountries.getOptions();
-		selectCountries.selectByIndex(global.randomIntegerValue(1, countriesCount.size() ));
+		selectCountries.selectByIndex(global.randomIntegerValue(1, countriesCount.size()));
 	}
-	
-	public void setMonthlyUsersDropDown(WebDriver driver)
-	{
+
+	public void setMonthlyUsersDropDown(WebDriver driver) {
 		act.waitForElementVisible(driver, dropDownMonthyUserEstimate);
-		Select selectMonthlyUsers=new Select(dropDownMonthyUserEstimate);
+		Select selectMonthlyUsers = new Select(dropDownMonthyUserEstimate);
 		List<WebElement> monthlyUsersCount = selectMonthlyUsers.getOptions();
-		selectMonthlyUsers.selectByIndex(global.randomIntegerValue(1, monthlyUsersCount.size() ));
+		selectMonthlyUsers.selectByIndex(global.randomIntegerValue(1, monthlyUsersCount.size()));
 	}
-	
-	public void enterNecessaryDetailsForDemoRequest(WebDriver driver,String emailDomain)
-	{
+
+	public void enterNecessaryDetailsForDemoRequest(WebDriver driver, String emailDomain) {
 		setTextBoxFirstName(driver);
 		setTextBoxLastName(driver);
-		setTextBoxWorkEmail(driver,emailDomain);
+		setTextBoxWorkEmail(driver, emailDomain);
 		setTextBoxCompany(driver);
 		setTextPhoneNumber(driver);
 		setTextBoxJobTitle(driver);
 		setCountryDropDown(driver);
-		setMonthlyUsersDropDown(driver); 
+		setMonthlyUsersDropDown(driver);
 		act.clickOnElement(driver, checkBoxJourneysWeb);
 	}
-	
-	
+
 }
