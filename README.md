@@ -21,9 +21,9 @@ you can also run from testng.xml
  # To run a single/few tests
  - mvn test -Dtest=io.branch.tests.TeamTests.java#validateSignUpForDemoRequest
 
--Using testng
-You can use exclude tag if we do not want to run in testng.xml. Exaample,  <exclude name="testMethodName" />
-OR you can add tag in source of test class "enabled=false" to ignore the test
+-Using TestNG
+You can use exclude tag in testng.xml Example,  <exclude name="testMethodName" />
+OR add "enabled=false" in source of test class to ignore the test
  
 ** How to look for the logs
  - Log file is available in the project folder path with the name "branch.log". Before every run, log file clears
