@@ -33,9 +33,9 @@ OR add "enabled=false" in source of test class to ignore the test
    Integrate code into jenkins CICD
 
 ** Functionality assumptions
-	As per the instructions, launching of google site is starting point for execution. So this 	step is mentioned in before test method. 
- 	Each test case should start in new browser. No test case should be executed with in same browser
- Assumed Names of employees are unique. Hence used hashMaps, else we can use lists
+	As per the instructions, launching www.google.com is the starting point of execution. So it is mentioned in before test method.
+ 	Each test  should start in new browser and should never execute in an existing browser
+  Employee name is used as the unique identifier for each employee. If there are duplicate name, we can use some other attribute to identify them
 
 
 ** Modules Covered:
