@@ -40,8 +40,7 @@ public class HomePage {
 
 	/******************************************************************************
 	 * @Description: This method clicks on request for demo button in header section
-	 * @param driver
-	 *            - Type of WebDriver
+	 * @param driver - Type of WebDriver
 	 * @author Nagarjuna
 	 *******************************************************************************/
 	public void clickOnRequestForDemoButton(WebDriver driver) {
@@ -51,15 +50,19 @@ public class HomePage {
 
 	/******************************************************************************
 	 * @Description: This method clicks on Team Link present in footer section
-	 * @param driver
-	 *            - Type of WebDriver
+	 * @param driver - Type of WebDriver
 	 * @author Nagarjuna
 	 *******************************************************************************/
 	public void clickFooterTeamLink(WebDriver driver) {
 		act.waitForElementVisible(driver, linkTeam);
 		act.clickOnElement(driver, linkTeam);
 	}
-
+	
+	/******************************************************************************
+	 * @Description: This method clicks on cookie accept button of branch website
+	 * @param driver - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
 	public void acceptCookieAlert(WebDriver driver) {
 		act.clickOnElement(driver, buttonCookieAlert);
 	}

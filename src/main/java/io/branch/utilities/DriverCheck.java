@@ -10,14 +10,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import io.branch.utilities.OSCheck;
 
 public class DriverCheck {
 	
 	/**
-	 * Get the web driver instance based on the OS type and browser 
+	 * Get the web driver instance based on the OS version and browser 
 	 */
 
 	private static ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
@@ -38,10 +37,8 @@ public class DriverCheck {
     			driver = new SafariDriver();
     		}
     		if (browserName.toLowerCase().contains("internet")) {
-                DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-                caps.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
     			System.setProperty("webdriver.ie.driver", driverPath);
-    			driver = new InternetExplorerDriver(caps);
+    			driver = new InternetExplorerDriver();
     		}
     		if (browserName.toLowerCase().contains("chrome")) {
     			System.setProperty("webdriver.chrome.driver", driverPath);

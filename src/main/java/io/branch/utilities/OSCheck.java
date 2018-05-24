@@ -13,9 +13,7 @@ public final class OSCheck {
 	  protected static OSType detectedOS;
 
 	  /**
-	   * detect the operating system from the os.name System property and cache
-	   * the result
-	   * 
+	   * @description - detect the operating system from the os.name System property
 	   * @returns - the operating system detected
 	   */
 	  public static OSType getOperatingSystemType() {

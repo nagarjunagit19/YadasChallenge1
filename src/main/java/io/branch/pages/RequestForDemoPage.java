@@ -70,30 +70,77 @@ public class RequestForDemoPage {
 
 	}
 
+	/******************************************************************************
+	 * @Description: This method sets the text field of First Name
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
+
 	public void setTextBoxFirstName(WebDriver driver) {
 		act.enterText(driver, textBoxFirstName, global.randomString());
 	}
 
+	/******************************************************************************
+	 * @Description: This method sets the text field of last name
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
 	public void setTextBoxLastName(WebDriver driver) {
 		act.enterText(driver, textBoxLastName, global.randomString());
 	}
 
+	/******************************************************************************
+	 * @Description: This method sets the text field of work email
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
 	public void setTextBoxWorkEmail(WebDriver driver, String domain) {
 
 		act.enterText(driver, textBoxWorkEmail, global.randomEmailGenerator(domain));
 	}
 
+	/******************************************************************************
+	 * @Description: This method sets the text field of company
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
+
 	public void setTextBoxCompany(WebDriver driver) {
 		act.enterText(driver, textBoxCompany, global.randomString());
 	}
+
+	/******************************************************************************
+	 * @Description: This method sets the text field of phone number
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
 
 	public void setTextPhoneNumber(WebDriver driver) {
 		act.enterText(driver, textBoxPhoneNumber, global.randomPhoneNumber());
 	}
 
+	/******************************************************************************
+	 * @Description: This method sets the text field of Job title
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
+
 	public void setTextBoxJobTitle(WebDriver driver) {
 		act.enterText(driver, textBoxJobTitle, "QA");
 	}
+
+	/******************************************************************************
+	 * @Description: This method selects the random value from country drop down
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
 
 	public void setCountryDropDown(WebDriver driver) {
 		act.waitForElementVisible(driver, dropDownListCountry);
@@ -102,12 +149,27 @@ public class RequestForDemoPage {
 		selectCountries.selectByIndex(global.randomIntegerValue(1, countriesCount.size()));
 	}
 
+	/******************************************************************************
+	 * @Description: This method selects random value from Monthly user drop down
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 *******************************************************************************/
+
 	public void setMonthlyUsersDropDown(WebDriver driver) {
 		act.waitForElementVisible(driver, dropDownMonthyUserEstimate);
 		Select selectMonthlyUsers = new Select(dropDownMonthyUserEstimate);
 		List<WebElement> monthlyUsersCount = selectMonthlyUsers.getOptions();
 		selectMonthlyUsers.selectByIndex(global.randomIntegerValue(1, monthlyUsersCount.size()));
 	}
+
+	/**********************************************************************************
+	 * @Description: This method enters all the required fields to submit a demo
+	 *               request
+	 * @param driver
+	 *            - Type of WebDriver
+	 * @author Nagarjuna
+	 **********************************************************************************/
 
 	public void enterNecessaryDetailsForDemoRequest(WebDriver driver, String emailDomain) {
 		setTextBoxFirstName(driver);
@@ -118,7 +180,8 @@ public class RequestForDemoPage {
 		setTextBoxJobTitle(driver);
 		setCountryDropDown(driver);
 		setMonthlyUsersDropDown(driver);
-		act.clickOnElement(driver, checkBoxJourneysWeb);
+		act.clickOnElement(driver, checkBoxJourneysWeb); // For time being, I have selected one checkbox, but this can
+															// be customized.
 	}
 
 }

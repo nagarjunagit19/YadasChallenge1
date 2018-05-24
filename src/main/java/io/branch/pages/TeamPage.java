@@ -180,6 +180,14 @@ public class TeamPage {
 		return util.checkForBrokenLinks(allLinkOnTeamPage());
 	}
 
+	/***********************************************************************************
+	 * @Description: This method captures all employee name and image for given dept
+	 * @param WebElement
+	 *            - dept
+	 * @author Nagarjuna
+	 * @return a HashMap of all employee names and image under given dept
+	 ***********************************************************************************/
+
 	public Map<String, String> getEmployeeNameAndImage(WebElement dept) {
 		act.clickOnElement(driver, dept);
 		List<String> empNames = new ArrayList<String>();
