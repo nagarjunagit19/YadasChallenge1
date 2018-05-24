@@ -1,15 +1,12 @@
 package io.branch.tests;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-
-import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -77,7 +74,8 @@ public class TeamTests {
 			Log.info("Current Title of the page -  " + driver.getTitle());
 			List<String> m = teamPage.getDepartmentList();
 			Log.endTestCase(testCaseName);
-			Assert.assertEquals(m.size(), prop.getProperty("expectedTotalNumberOfDepartments"),
+			int actualCount=Integer.valueOf(prop.getProperty("expectedTotalNumberOfDepartments"));
+			Assert.assertEquals(m.size(), actualCount,
 					"There is mis match between current and expected number of departments");
 		} catch (Exception e) {
 			Log.error(e.toString());
@@ -195,7 +193,6 @@ public class TeamTests {
 				if (!allNamesInAllDept.contains(s)) {
 					Log.info("This Employee" + s + " is present in All Tab list but not present in any department");
 					flag = true;
-					System.out.println(s);
 				}
 			}
 			Log.endTestCase(testCaseName);
@@ -223,7 +220,7 @@ public class TeamTests {
 			brokenLinksWithReponseMessage = teamPage.getBrokenLinksForTeamPage();
 			Log.info("Broken Link details" + brokenLinksWithReponseMessage);
 			Log.endTestCase(testCaseName);
-			Assert.assertEquals("0", brokenLinksWithReponseMessage.size(),
+			Assert.assertEquals(brokenLinksWithReponseMessage.size(),0,
 					"There are broken links detected on team page, details are mentioned in log");
 		} catch (Exception e) {
 			Log.error(e.toString());

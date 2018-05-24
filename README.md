@@ -41,6 +41,7 @@ OR you can add tag in source of test class "enabled=false" to ignore the test
 ** Modules Covered:
  - Team Page
 
-** Test Report
- - Placed a separate document in the project folder (TestReport.xlsx)
+** Test Report 
+ - Test report of all scripts are found in test-output -> index.html
+ - Also placed a separate document in the project folder (TestReport.xlsx)
 

@@ -5,8 +5,9 @@
     <classes>
       <class name="io.branch.tests.TeamTests">
         <methods>
+          <include name="validateBrokenLinksOnTeamPage"/>
+          <include name="validateEmployeeCount"/>
           <include name="setup"/>
-          <include name="validateEmployeeNames1"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- io.branch.tests.TeamTests -->
